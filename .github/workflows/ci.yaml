@@ -26,6 +26,7 @@ jobs:
         with:
           push: true
           tags: xorima/get-iplayer:latest
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
           build-args: |
             arg1=value1
             arg2=value2
