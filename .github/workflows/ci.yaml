@@ -35,7 +35,6 @@ jobs:
           tags: |
             xorima/get-iplayer:${{ steps.version.outputs.version }}
             xorima/get-iplayer:${{ steps.version.outputs.version }}-${{ steps.git-sha.outputs.short }}
-            xorima/get-iplayer:${{ steps.version.outputs.version }}-${{ steps.git-sha.outputs.short }}-${{ steps.build-date.outputs.build_date}}
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           build-args: |
             BUILD_DATE=${{ steps.build-date.outputs.build_date}}
