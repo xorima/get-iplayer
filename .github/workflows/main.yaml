@@ -1,10 +1,11 @@
-name: build
+name: build-latest
 
 on:
   push:
     branches:
       - main
-
+  schedule:
+  - cron: "0 0 * * *"
 jobs:
   buildx:
     runs-on: ubuntu-latest
