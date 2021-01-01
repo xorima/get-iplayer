@@ -23,7 +23,7 @@ RUN \
   apt-get install -y software-properties-common --no-install-recommends && \
   add-apt-repository ppa:m-grant-prg/utils && \
   apt-get update && \
-  apt-get install -y get-iplayer=${GET_IPLAYER_VERSION}-* --no-install-recommends && \
+  apt-get install -y get-iplayer=${GET_IPLAYER_VERSION}* --no-install-recommends && \
 # cleanup
   apt-get clean && \
   rm -rf \
