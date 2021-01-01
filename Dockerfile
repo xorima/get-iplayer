@@ -4,7 +4,6 @@ FROM ubuntu:20.04
 LABEL maintainer="Xorima"
 ARG BUILD_DATE
 ARG VCS_REF
-ARG BUILD_VERSION
 ARG GET_IPLAYER_VERSION
 
 LABEL org.label-schema.schema-version="1.0"

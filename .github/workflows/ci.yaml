@@ -16,7 +16,9 @@ jobs:
       - name: build-date
         run: echo ::set-output name=build_date::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
       - name: get-iplayer-version
-        run: echo ::set-output name=version::$(cat version.txt)
+        run: |
+          echo $(cat version.txt)
+          echo ::set-output name=version::$(cat version.txt)
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
